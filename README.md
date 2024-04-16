@@ -1,4 +1,3 @@
-影片教學：https://youtu.be/aAgXceMIrD0
 
 指令如下:
 
