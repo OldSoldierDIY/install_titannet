@@ -23,8 +23,10 @@ docker run -d -v ~/.titanedge5:/root/.titanedge --name docker5 nezha123/titan-ed
 sleep 5  # 等待5秒
 
 # 步驟 4：提示用户輸入 hash
-echo "請輸入你的 hash: "
-read -r hash
+#echo "請輸入你的 hash: "
+#read -r hash
+# 定义 hash 变量
+hash="07856DCC-2604-4F71-BF89-4A4396836ABC"
 
 # 循環進入每個容器，並執行命令
 for i in {1..5}; do
