@@ -29,6 +29,10 @@ sleep 5  # 等待5秒
 hash="07856DCC-2604-4F71-BF89-4A4396836ABC"
 
 # 循環進入每個容器，並執行命令
+#for i in {1..5}; do
+#    docker exec -i docker$i bash -c "echo \"$hash\" | titan-edge bind --hash=\$(cat) https://api-test1.container1.titannet.io/api/v2/device/binding"
+#done
 for i in {1..5}; do
-    docker exec -i docker$i bash -c "echo \"$hash\" | titan-edge bind --hash=\$(cat) https://api-test1.container1.titannet.io/api/v2/device/binding"
+    docker exec -i docker$i bash -c "titan-edge bind --hash=$hash https://api-test1.container1.titannet.io/api/v2/device/binding"
 done
+
