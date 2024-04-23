@@ -13,8 +13,8 @@ sudo ./install_docker.sh
 # 設置 Docker 容器
 sudo ./setup_docker_containers.sh
 
-# 設置 Docker 容器 50G
-command="titan-edge config set --storage-size 50GB"
+# 設置 Docker 容器 140G
+command="titan-edge config set --storage-size 140GB"
 
 # 循環進入每個容器，並執行命令
 for i in {1..5}; do
