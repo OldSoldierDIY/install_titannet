@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 設置要執行的命令
-command="titan-edge config set --storage-size 50GB"
+command="titan-edge config set --storage-size 140GB"
 
 # 循環進入每個容器，並執行命令
 for i in {1..5}; do
